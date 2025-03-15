@@ -3,7 +3,15 @@ artifacts_root: artifacts
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_url: https://github.com/SiddharthKarmokar/codeforces-dataset.git
-  local_data_file: artifacts/data_ingestion/data
+  local_data_file: artifacts/data_ingestion/data/
   unzip_dir: artifacts/data_ingestion/raw
   contests_dir: artifacts/data_ingestion/raw/contests
   authors_file: artifacts/data_ingestion/authors.csv 
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/data/
+  data_file: artifacts/data_transformation/data.csv
+  train_file: artifacts/data_transformation/train.csv
+  test_file: artifacts/data_transformation/test.csv
+  tokenizer_name: meta-llama/CodeLlama-7b-Instruct-hf

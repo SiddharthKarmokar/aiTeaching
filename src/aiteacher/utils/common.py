@@ -87,4 +87,4 @@ def create_directories(path_to_directories:list, verbose=True):
     for path in path_to_directories:
         os.makedirs(path, exist_ok=True)
         if verbose:
-            logger.info(f"created directioy at: {path}")
+            logger.info(f"created directoiy at: {path}")
